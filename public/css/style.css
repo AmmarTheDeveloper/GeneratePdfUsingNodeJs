@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #eee;
+    color: #28282b;
+}
+
+.heading {
+    margin-block: 50px 10px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+form {
+    margin-top: 50px;
+    width: 450px;
+    max-width: 100%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form input {
+    width: 100%;
+    margin-block: 10px 20px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding-inline: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+form button {
+    height: 40px;
+    width: 100%;
+    padding-inline: 10px;
+    background: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #28282B;
+}
+
+form .label {
+    margin-block: 20px 10px;
+}
+
+form p {
+    font-weight: 500;
+    margin-block: 10px;
+}
+
+form p a {
+    text-decoration: none;
+    color: blue;
+}

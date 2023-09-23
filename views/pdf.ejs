@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf</title>
+    <!-- <link rel="stylesheet" href="./css/pdf.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #ccc;
+
+        }
+
+        .container .card {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .container .card img {
+            border-radius: 50%;
+            height: 170px;
+            width: 170px;
+        }
+
+        .container .card p {
+            font-size: 16px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .container .card .status {
+
+            color: grey;
+            margin-block: 10px;
+
+        }
+
+        .container .card .content {
+            text-align: center;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdV3ip1gxZ9bM13uZjWbiCpiETs2AVz3GS_Q&usqp=CAU"
+                alt="">
+            <p class="name">
+                <%= data.name %>
+            </p>
+            <p class="status">
+                <%= data.status %>
+            </p>
+            <p class="content">
+                <%= data.content %>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
